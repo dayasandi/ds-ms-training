@@ -1,6 +1,6 @@
 package virado.no.jiray.javacore.Aintroducaoclasses.mains;
 
-import virado.no.jiray.javacore.Aintroducaoclasses.domain.Estudante;
+import virado.no.jiray.javacore.Aintroducaoclasses.dominio.Estudante;
 
 public class EstudanteTeste01 {
     public static void main(String[] args) {

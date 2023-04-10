@@ -1,4 +1,4 @@
-package virado.no.jiray.javacore.Aintroducaoclasses.domain;
+package virado.no.jiray.javacore.Aintroducaoclasses.dominio;
 
 public class Carro {
     public String nome;
