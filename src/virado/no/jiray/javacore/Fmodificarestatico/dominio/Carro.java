@@ -4,7 +4,7 @@ public class Carro {
     private String nome;
     private double velocidadeMaxima;
 
-    public static double velocidadeLimite = 250;
+    private static double velocidadeLimite = 250;
 
     public Carro(String nome, double velocidadeMaxima){
         this.nome = nome;
@@ -15,6 +15,15 @@ public class Carro {
         System.out.println("Nome "+ this.nome);
         System.out.println("Velocidade Maxima "+ this.velocidadeMaxima);
         System.out.println("Velocidade Limite "+ velocidadeLimite);
+    }
+    public static void setVelocidadeLimite(double velocidadeLimite){
+//        this.velocidadeMaxima; metodos staticos não podem acessar variaveis que podem não existir
+// variaveis que podem não existir são aquelas que estao dentro da classe que pode ou nao ser instanciada
+        Carro.velocidadeLimite = velocidadeLimite;
+    }
+
+    public static double getVelocidadeLimite(){
+        return Carro.velocidadeLimite;
     }
     public String getNome() {
         return nome;

@@ -1,0 +1,4 @@
+jogador 1 --1 personagem // um para um (um jogador só pode ter um personagem)
+time 1 -- N jogador // um para muitos (um time pode ter varios jogadore)
+jogador N -- 1 time // muitos para um (varios jogadores pode fazer parte de um time)
+estudante n -- n curso // muitos para muitos (varios estudantes pode fazer varos cursos)
