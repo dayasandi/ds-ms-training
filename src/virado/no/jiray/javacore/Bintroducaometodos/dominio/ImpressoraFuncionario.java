@@ -3,26 +3,27 @@ package virado.no.jiray.javacore.Bintroducaometodos.dominio;
 public class ImpressoraFuncionario {
 
     public void imprimeNome(Funcionario func) {
-        System.out.println(func.nome);
-        System.out.println(func.idade);
-        if (func.salario == null) {
+        System.out.println(func.getNome());
+        System.out.println(func.getIdade());
+        if (func.getSalario() == null) {
             return;
         }
-        for (double salario : func.salario) {
+        for (double salario : func.getSalario()) {
             System.out.println(salario + " ");
         }
-        imprimeMediaSalario(func.salario);
+        imprimeMediaSalario(func);
     }
 
-    public void imprimeMediaSalario(double[] salarios) {
-        if (salarios == null) {
+    public void imprimeMediaSalario(Funcionario funcionario) {
+        if (funcionario.getSalario() == null) {
             return;
         }
-        double media = 0;
-         for (double salario : salarios) {
-                media += salario;
+        double media = funcionario.getMedia();
+         for (double salario : funcionario.getSalario()) {
+
+                   media += salario;
             }
-            media /= salarios.length;
+            media /= funcionario.getSalario().length;
         System.out.println("Média salario: " + media);
     }
 }

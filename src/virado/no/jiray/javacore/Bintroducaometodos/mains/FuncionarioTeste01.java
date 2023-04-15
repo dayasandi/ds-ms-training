@@ -7,9 +7,9 @@ public class FuncionarioTeste01 {
     public static void main(String[] args) {
         Funcionario func = new Funcionario();
         ImpressoraFuncionario impressora = new  ImpressoraFuncionario();
-        func.nome = "Dayane";
-        func.idade = 32;
-        func.salario = new double[]{1200,987.32, 2000};
+        func.setNome("Dayane");
+        func.setIdade(32);
+        func.setSalario(new double[]{1200,987.32, 2000});
 
         System.out.println("Imprimindo dados do funcionario: ");
         impressora.imprimeNome(func);

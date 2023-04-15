@@ -5,7 +5,7 @@ public class Aula06EstruturasDeRepeticao05 {
     int valorTotal = 30000;
     for (int parcela = valorTotal; parcela >= 1; parcela--){
         double valrParcela = valorTotal / parcela;
-        if (valrParcela < 1000 ){
+        if (valrParcela > 1000 ){
             continue;
         }
         System.out.println("Parcela "+ parcela + " R$ "+valrParcela );
